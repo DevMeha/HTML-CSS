@@ -44,7 +44,17 @@
         align-items: center; /*wyrównanie dla elementów wewnątrz rodzica z wyświetlaniem 
         */
         justify-content: center; /*rozdziela przestrzeń między elementami zawartości wzdłuż osi głównej kontenera*/
-        justify-content: space-between; /*używa się do wyrównania elementów wewnątrz flex*/
+        justify-content: flex-start; /*używa się do wyrównania elementów wewnątrz flex*/
+        gap: 30px;
+      }
+      .el--6 {
+        order: -1;
+      }
+      .el--1 {
+        align-self: self-start;
+      }
+      .el--5 {
+        align-self: stretch;
       }
     </style>
   </head>
@@ -56,8 +66,8 @@
       <div class="el el--4">are</div>
       <div class="el el--5">amazing</div>
       <div class="el el--6">languages</div>
-      <div class="el el--7">to</div>
-      <div class="el el--8">learn</div>
+      <!-- <div class="el el--7">to</div>
+      <div class="el el--8">learn</div> -->
     </div>
   </body>
 </html>
