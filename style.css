@@ -205,18 +205,15 @@ article {
   width: 825px;
   float: left;
 }
+  */
 aside {
   width: 300px;
-  float: right;
   background-color: aqua;
   border-top: 5px solid rgb(77, 77, 77);
   border-bottom: 5px solid rgb(77, 77, 77);
   padding: 50px 40px;
 }
-footer {
-  clear: both;
-}
-*/
+
 .main-header {
   display: flex;
   align-items: center;
@@ -244,4 +241,17 @@ footer {
   font-weight: bold;
   margin-bottom: 5px;
   display: block;
+}
+.row {
+  display: flex;
+  gap: 75px;
+  margin-bottom: 60px;
+  align-items: flex-start;
+}
+article {
+  flex: 0 0 825px;
+  margin-bottom: 0;
+}
+aside {
+  flex: 0 0 300px;
 }
